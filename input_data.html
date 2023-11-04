@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+
+      .menu {
+      text-align: center;
+      background-color: rgb(0, 118, 202);
+      font-size:22px;
+      padding-top: 18pt;
+
+      .button {
+      background-color: rgb(199, 238, 5);
+      padding: 6px;
+      box-sizing: border-box ;
+      border-color: rgb(84, 239, 13);
+      text-decoration: none;
+      }
+      .button:hover {
+      background-color: rgb(249, 249, 252);
+      }
+    </style>
+    <hr />
+  </head>
+  <body>
+    <div class="menu">
+      <a href="index.html" class="button">HOME</a>
+      <a href="list_data.html" class="button">LIST JURUSAN</a>
+      <a href="input_data.html" class="button">INPUT DATA</a>
+      <a href="tabel_data.html" class="button">TAMPIL TABEL</a>
+      <a href="about.html" class="button">ABOUT</a>
+      <br /><br />
+    </div>
+    <style>
+      body {
+        background-image: url(background.jpg);
+        background-color: white;
+      }
+    </style>
+    <h2 align="center">RENTAL MOTOR</h2>
+    <form action="proses.php" method="post">
+      <table widht="400">
+        <tr>
+          <td>No Identitas</td>
+          <td><input type="text" name="KTP" /></td>
+        </tr>
+        <tr>
+          <td>Nama</td>
+          <td><input type="text" name="nama" /></td>
+        </tr>
+        <tr>
+          <td>No Hp</td>
+          <td><input type="text" name="Nohp" /></td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td><input type="text" name="email" /></td>
+        </tr>
+        <tr>
+          <td>Alamat</td>
+          <td><textarea></textarea></td>
+        </tr>
+        <tr>
+          <td>Jenis Motor</td>
+          <td>
+            <select name="motor" id="motor">
+              <option value="DUCATI">DUCATI</option>
+              <option value="BMW">BMW</option>
+              <option value="YAMAHA">YAMAHA</option>
+              <option value="HONDA">HONDA</option>
+              <option value="APRILLIA">APRILLIA</option>
+              <option value="SUZUKI">SUZUKI</option>
+              <option value="KAWASAKI">KAWASAKI</option>
+              <option value="HARLEY">HARLEY</option>
+              <option value="SUPRA">SUPRA</option>
+              <option value="ASTREA">ASTREA</option>
+              <option value="GL">GL</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Type Layanan</td>
+          <td>
+            <input type="radio" value="lepas kunci" name="typelayanan" />Lepas
+            Kunci
+            <input type="radio" value="Dengan Istri" name="typelayanan" />Dengan
+            Istri
+          </td>
+        </tr>
+        <tr>
+          <td>Tanggal Sewa</td>
+          <td>
+            <input type="date" name="tglsewa" />s/d
+            <input type="date" name="akhirsewa" />
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input name="btnsimpan" type="submit" value="SIMPAN" />
+            <input name="btnbatal" type="reset" value="BATAL" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
